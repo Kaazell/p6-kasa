@@ -11,7 +11,7 @@ footer {
     height: 210px;
     color: white;
 }
-h3 {
+.footer_text {
     font-size: 12px;
     width:130px;
     text-align: center;
@@ -21,7 +21,7 @@ h3 {
 
 
 @media (min-width: 720px) {
- h3 {
+ .footer_text {
     width: 200px;
  }
 }
