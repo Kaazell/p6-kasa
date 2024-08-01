@@ -6,7 +6,7 @@ header {
     align-items: center;
 }
 img {
-    width: 45%;
+    width: 120px
 }
 ul {
     display: flex;
@@ -22,5 +22,29 @@ ul {
                 text-decoration: underline;
             }
         }
+    }
+}
+
+@media (min-width: 720px) {
+    img {
+        width:200px
+    }
+    ul {
+        font-size: 18px;
+    }
+    li {
+        margin-left: 40px;
+    }
+}
+
+@media (min-width: 1024px) {
+    img {
+        width:270px
+    }
+    ul {
+        font-size: 24px;
+    }
+    li {
+        margin-left: 60px;
     }
 }

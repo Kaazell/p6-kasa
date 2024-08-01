@@ -7,3 +7,17 @@
     padding: 20px;
     font-family: Montserrat, Arial, Helvetica, sans-serif;
   }
+
+
+  @media (min-width: 720px) {
+    body{
+        padding: 50px;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    body{
+        padding: 100px;
+    }
+}
