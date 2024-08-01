@@ -1,9 +1,9 @@
-import Button from "./components/Button";
+import { Outlet } from "react-router-dom";
 
 function App() {
   return (
     <div>
-      <Button />
+      <Outlet />
     </div>
   );
 }
