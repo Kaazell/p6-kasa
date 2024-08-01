@@ -4,7 +4,7 @@ import s from "./Header.module.scss";
 export function Header() {
   return (
     <header>
-      <img src={logo} alt="Logo Kasa" />
+      <img src={logo} className={s.header_logo} alt="Logo Kasa" />
       <ul>
         <li>
           <a href="#">ACCUEIL</a>
