@@ -1,0 +1,20 @@
+@use "../../styles/variables";
+
+.card_container {
+    width: 100%;
+    background-color: variables.$secondary-color;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 340px); /* Utilise repeat pour simplifier la syntaxe */
+    gap: 1rem; /* Ajoute un espace entre les éléments */
+    justify-content: space-evenly; /* Espace uniformément les éléments horizontalement */
+    align-items: center; /* Centre les éléments verticalement */
+    margin: 60px 0 60px 0;
+    padding: 40px;
+}
+
+// @media (min-width: 780px) {
+//     .card_container{
+//         background-color: variables.$secondary-color;
+//     }
+// }

@@ -1,0 +1,17 @@
+@use "../../styles/variables";
+
+.card {
+    border: 1px solid black;
+    height: 255px;
+    width: 100%;
+    min-width: 255px;
+    background-color: variables.$primary-color;
+    margin: 11px 0;
+
+}
+@media (min-width: 780px) {
+    .card{
+        height: 340px;
+        max-width: 340px;
+    }
+}
