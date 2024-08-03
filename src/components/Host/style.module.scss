@@ -1,0 +1,35 @@
+@use "../../styles/variables";
+
+.host{
+    display: flex;
+}
+
+.host_name{
+    width: 70px;
+    text-align: end;
+    margin-right: 10px;
+    font-size: 12px;
+    font-weight: 500;
+    color: variables.$primary-color;
+    display: flex;
+    align-items: center;
+}
+
+.profile_pic{
+    width: 32px;
+    height: 32px;
+    background-color:#C4C4C4;
+    border-radius: 50%;
+}
+
+@media (min-width: 875px) {
+    .host_name{
+        width: 100px;
+        font-size: 18px;
+    }
+    
+    .profile_pic{
+        width: 64px;
+        height: 64px;
+    }
+}
