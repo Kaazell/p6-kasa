@@ -1,4 +1,4 @@
-import s from "./HousingName.module.scss";
+import s from "./style.module.scss";
 
 export function HousingName({ name, description }) {
   return (

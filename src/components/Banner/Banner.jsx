@@ -1,4 +1,4 @@
-import s from "./Banner.module.scss";
+import s from "./style.module.scss";
 
 // L'attribut housing permet de determiner si le present composant est prevu pour la page 'home' ou 'housing'.
 

@@ -1,7 +1,7 @@
 import { Banner } from "../../components/Banner/Banner";
 import { HousingCard } from "../../components/HousingCard/HousingCard";
 import picture from "../../assets/images/banner-home.png";
-import s from "./Home.module.scss";
+import s from "./style.module.scss";
 export function Home() {
   return (
     <div>
