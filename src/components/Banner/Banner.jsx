@@ -1,5 +1,7 @@
 import s from "./Banner.module.scss";
 
+// L'attribut housing permet de determiner si le present composant est prevu pour la page 'home' ou 'housing'.
+
 export function Banner({ text, picture, alternative_text, housing }) {
   return (
     <div className={s.banner_container}>

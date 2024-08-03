@@ -1,0 +1,14 @@
+@use "../../styles/variables";
+
+.tag {
+    background-color: variables.$primary-color;
+    width: 84px;
+    height: 18px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    font-size: 10px;
+    margin-right: 10px;
+}
