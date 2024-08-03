@@ -11,3 +11,13 @@
     font-size: 14px;
     font-weight: 500;
 }
+
+@media (min-width: 875px) {
+    .description {
+        font-size: 36px;
+    }
+    .location {
+        font-size: 18px;
+    }
+    
+}
