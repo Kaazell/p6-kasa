@@ -5,6 +5,7 @@ import { Tag } from "../../components/Tag/Tag";
 import s from "./style.module.scss";
 import { Host } from "../../components/Host/Host";
 import { Stars } from "../../components/Stars/Stars";
+import { Accordion } from "../../components/Accordion/Accordion";
 
 export function Housing() {
   return (
@@ -30,6 +31,9 @@ export function Housing() {
           <Stars />
           <Host />
         </div>
+      </div>
+      <div className={s.accordion}>
+        <Accordion />
       </div>
     </>
   );

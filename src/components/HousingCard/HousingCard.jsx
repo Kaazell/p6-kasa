@@ -1,5 +1,9 @@
 import s from "./style.module.scss";
 
-export function HousingCard() {
-  return <div className={s.card}>HousingCard</div>;
+export function HousingCard(props) {
+  return (
+    <div className={s.card}>
+      <img src={props.src} />
+    </div>
+  );
 }
