@@ -6,25 +6,32 @@ import s from "./style.module.scss";
 import { Host } from "../../components/Host/Host";
 import { Stars } from "../../components/Stars/Stars";
 import { Accordion } from "../../components/Accordion/Accordion";
+import json from "../../assets/json/housing.json";
+import { useParams } from "react-router-dom";
 
 export function Housing() {
+  const { id } = useParams();
+  const currentItem = json.find((item) => item.id === id);
+  console.log(currentItem);
+  const tags = currentItem.tags;
+
   return (
     <>
       <Banner
-        picture={picture}
-        text={"Housing = true"}
+        picture={currentItem.cover}
         alternative_text={"Also this"}
         housing={true}
       />
       <div className={s.main_container}>
         <div>
           <HousingName
-            name={"Cozy loft on the Canal Saint-Martin"}
-            description={"Paris, Ile de France"}
+            name={currentItem.title}
+            description={currentItem.location}
           />
           <div className={s.tag_container}>
-            <Tag />
-            <Tag />
+            {tags.map((item) => (
+              <Tag tag={item} />
+            ))}
           </div>
         </div>
         <div className={s.host_details}>
