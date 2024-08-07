@@ -1,5 +1,4 @@
 import { Banner } from "../../components/Banner/Banner";
-import picture from "../../assets/images/banner-home.png";
 import { HousingName } from "../../components/HousingName/HousingName";
 import { Tag } from "../../components/Tag/Tag";
 import s from "./style.module.scss";
@@ -29,7 +28,7 @@ export function Housing() {
           />
           <div className={s.tag_container}>
             {tags.map((item) => (
-              <Tag tag={item} />
+              <Tag key={item} tag={item} />
             ))}
           </div>
         </div>
