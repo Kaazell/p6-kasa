@@ -12,7 +12,6 @@ import { useParams } from "react-router-dom";
 export function Housing() {
   const { id } = useParams();
   const currentItem = json.find((item) => item.id === id);
-  console.log(currentItem);
   const tags = currentItem.tags;
 
   return (
@@ -35,8 +34,11 @@ export function Housing() {
           </div>
         </div>
         <div className={s.host_details}>
-          <Stars />
-          <Host />
+          <Stars rating={currentItem.rating} />
+          <Host
+            name={currentItem.host.name}
+            picture={currentItem.host.picture}
+          />
         </div>
       </div>
       <div className={s.accordion}>

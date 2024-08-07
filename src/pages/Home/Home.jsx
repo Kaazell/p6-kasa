@@ -9,8 +9,6 @@ console.log(json);
 
 export function Home() {
   const navigate = useNavigate();
-  const { id } = useParams();
-  const currentItem = json.find((item) => item.id === id);
 
   return (
     <div>
