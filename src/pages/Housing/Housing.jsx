@@ -41,7 +41,7 @@ export function Housing() {
           />
         </div>
       </div>
-      <div className={s.accordion}>
+      <div className={s.accordions_container}>
         <Accordion
           buttonText="Description"
           description={currentItem.description}

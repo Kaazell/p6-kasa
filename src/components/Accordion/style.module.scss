@@ -1,12 +1,18 @@
+@use "../../styles/variables";
+
+.container{
+    margin-top: 10px;
+}
+
 .button_title{
-    padding: 8px 8px 8px 12px;
+    padding: 8px;
     text-align: left;
-    background-color: #ff6060;
+    background-color: variables.$primary-color;
     border: none;
     color: white;
     width: 100%;
-    border-radius: 4px;
-    font-size: 22px;
+    border-radius: 5px;
+    font-size: 13px;
     font-weight: 420;
 }
 
@@ -15,12 +21,10 @@
     background-color: #F6F6F6;
     position: relative;
     border-radius: 0 0 4px 4px;
-    color: #ff6060;
+    color: variables.$primary-color;;
     padding: 20px 0;
-    margin-bottom: 10px;
     p {
         margin: 2px 20px;
-
     }
 }
 .button_title {
@@ -35,7 +39,6 @@
 }
 
 .list:last-child {
-
     margin-bottom: 10px;
 }
   
@@ -43,4 +46,10 @@
     opacity: 1; 
     max-height: 300px; 
 }
-  
+
+@media (min-width: 720px) {
+    .container {
+        margin-top: 30px;
+        width: 45%;       
+    }
+}
