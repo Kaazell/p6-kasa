@@ -1,0 +1,46 @@
+.button_title{
+    padding: 8px 8px 8px 12px;
+    text-align: left;
+    background-color: #ff6060;
+    border: none;
+    color: white;
+    width: 100%;
+    border-radius: 4px;
+    font-size: 22px;
+    font-weight: 420;
+}
+
+.list{
+    width: 100%;
+    background-color: #F6F6F6;
+    position: relative;
+    border-radius: 0 0 4px 4px;
+    color: #ff6060;
+    padding: 20px 0;
+    margin-bottom: 10px;
+    p {
+        margin: 2px 20px;
+
+    }
+}
+.button_title {
+    display: flex;
+    justify-content: space-between;
+}
+.list {
+    opacity: 0; 
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.3s ease, max-height 0.3s ease;
+}
+
+.list:last-child {
+
+    margin-bottom: 10px;
+}
+  
+.list.open {
+    opacity: 1; 
+    max-height: 300px; 
+}
+  

@@ -42,7 +42,14 @@ export function Housing() {
         </div>
       </div>
       <div className={s.accordion}>
-        <Accordion />
+        <Accordion
+          buttonText="Description"
+          description={currentItem.description}
+        />
+        <Accordion
+          buttonText="Equipements"
+          equipement={currentItem.equipments}
+        />
       </div>
     </>
   );
