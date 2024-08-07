@@ -11,7 +11,6 @@
             padding: 40px;
             background-color: variables.$secondary-color;
             border-radius: 20px;
-
     }
 }
 
@@ -19,10 +18,9 @@
     .card_container{
             width: 100%;
             display: grid;
-            grid-template-columns: repeat(3, 340px); /* Utilise repeat pour simplifier la syntaxe */
+            grid-template-columns: repeat(3, 340px);
             gap: 1rem; 
             justify-content: space-evenly;
             align-items: center; 
-                
         }
 }

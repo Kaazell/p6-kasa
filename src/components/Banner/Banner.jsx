@@ -44,13 +44,13 @@ export function Banner({ text, picture, alternative_text, housing }) {
           src={photos[currentImageIndex]}
           alt={alternative_text}
         />
-        <button className={s.leftButton} onClick={prevImage}>
+        <button className={s.left_button} onClick={prevImage}>
           <i className="fa-solid fa-chevron-left fa-2xl"></i>
         </button>
-        <p className={s.currentSlide}>
+        <p className={s.current_slide}>
           {currentImageIndex + 1} / {photos.length}
         </p>
-        <button className={s.rightButton} onClick={nextImage}>
+        <button className={s.right_button} onClick={nextImage}>
           <i className="fa-solid fa-chevron-right fa-2xl"></i>
         </button>
         <div className={s.banner_text}>{text}</div>
