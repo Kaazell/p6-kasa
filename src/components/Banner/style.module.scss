@@ -9,16 +9,15 @@
     border: 0;
     cursor: pointer;
     color: white;
-    font-size: 36px;
-    margin: 40px
-
+    font-size: 12px;
+    margin: 10px
 }
 .leftButton {
-    left: 0; /* Déplacer le bouton de gauche tout à gauche */
+    left: 0;
 }
 
 .rightButton {
-    right: 0; /* Déplacer le bouton de droite tout à droite */
+    right: 0;
 }
 .currentSlide {
     position: absolute;
@@ -30,6 +29,7 @@
     font-size: 18px;
     z-index: 1; /* Assurez-vous que le texte est au-dessus des boutons */
     font-weight: 400;
+    display: none;
 }
 
 .banner_text {
@@ -63,7 +63,15 @@
         font-size: 24px;
     }
 }
-
+@media (min-width: 720px) {
+    .banner_container button {
+        font-size: 42px;
+        margin: 18px;
+    }
+    .currentSlide {
+        display: block;
+    }
+}
 @media (min-width: 1300px) {
     .banner_text{
         text-align: center;
