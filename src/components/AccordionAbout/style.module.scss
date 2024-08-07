@@ -14,6 +14,8 @@
     border-radius: 5px;
     font-size: 13px;
     font-weight: 420;
+    display: flex;
+    justify-content: space-between;
 }
 
 .list{
@@ -23,19 +25,13 @@
     border-radius: 0 0 4px 4px;
     color: variables.$primary-color;
     padding: 20px 0;
-    p {
-        margin: 2px 20px;
-    }
-}
-.button_title {
-    display: flex;
-    justify-content: space-between;
-}
-.list {
     opacity: 0; 
     max-height: 0;
     overflow: hidden;
     transition: opacity 0.3s ease, max-height 0.3s ease;
+    p {
+        margin: 2px 20px;
+    }
 }
 
 .list:last-child {
@@ -48,3 +44,12 @@
 }
 
 
+@media (min-width: 720px) {
+    .container {
+        margin-top: 30px;
+        width: 100%;       
+    }
+    .button_title{
+        font-size: 18px;
+    }
+}

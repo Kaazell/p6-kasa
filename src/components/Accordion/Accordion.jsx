@@ -4,7 +4,6 @@ import { ChevronUp } from "react-bootstrap-icons";
 
 export function Accordion({ buttonText, description, equipement }) {
   const [isOpen, setIsOpen] = useState(false);
-
   const toggleDropdown = () => setIsOpen(!isOpen);
   return (
     <div className={s.container}>
@@ -12,8 +11,8 @@ export function Accordion({ buttonText, description, equipement }) {
         {buttonText}
         <ChevronUp
           style={{
-            transform: isOpen ? "rotate(180deg)" : "rotate(0deg)",
-            transition: "transform 0.3s ease",
+            transform: isOpen ? "rotate(-180deg)" : "rotate(0deg)",
+            transition: "transform 0.4s ease",
           }}
         />
       </button>

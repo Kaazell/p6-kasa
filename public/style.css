@@ -12,6 +12,7 @@
 @media (min-width: 720px) {
     body{
         padding: 50px;
+        padding-top: 30px;
     }
 }
 
@@ -19,5 +20,6 @@
 @media (min-width: 1024px) {
     body{
         padding: 100px;
+        padding-top: 40px;
     }
 }
