@@ -6,6 +6,8 @@
   body {
     padding: 20px;
     font-family: Montserrat, Arial, Helvetica, sans-serif;
+    max-width: 1400px;
+    margin: 0 auto;
   }
 
 
