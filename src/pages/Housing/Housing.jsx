@@ -1,4 +1,3 @@
-import { Banner } from "../../components/Banner/Banner";
 import { HousingName } from "../../components/HousingName/HousingName";
 import { Tag } from "../../components/Tag/Tag";
 import s from "./style.module.scss";
@@ -7,6 +6,7 @@ import { Stars } from "../../components/Stars/Stars";
 import { Accordion } from "../../components/Accordion/Accordion";
 import json from "../../assets/json/housing.json";
 import { useParams } from "react-router-dom";
+import { Carousel } from "../../components/Carousel/Carousel";
 
 export function Housing() {
   const { id } = useParams();
@@ -15,7 +15,7 @@ export function Housing() {
 
   return (
     <>
-      <Banner
+      <Carousel
         picture={currentItem.cover}
         alternative_text={"Also this"}
         housing={true}
