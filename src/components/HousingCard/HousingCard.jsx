@@ -5,7 +5,7 @@ export function HousingCard(props) {
     <div className={s.card}>
       <img src={props.picture[0]} alt={props.title} />
       <div className={s.gradient}></div>
-      <span>{props.title}</span>
+      <h2>{props.title}</h2>
     </div>
   );
 }
