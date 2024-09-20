@@ -15,10 +15,7 @@ export function Housing() {
 
   return (
     <>
-      <Carousel
-        picture={currentItem.cover}
-        alternative_text={currentItem.title}
-      />
+      <Carousel />
       <div className={s.main_container}>
         <div>
           <HousingName

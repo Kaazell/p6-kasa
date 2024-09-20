@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 import { useState } from "react";
 
 // L'attribut housing permet de determiner si le present composant est prevu pour la page 'home' ou 'housing'.
-export function Carousel({ text, alternative_text }) {
+export function Carousel() {
   const { id } = useParams();
   const currentItem = json.find((item) => item.id === id);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -26,18 +26,22 @@ export function Carousel({ text, alternative_text }) {
       <img
         className={s.carousel_housing}
         src={photos[currentImageIndex]}
-        alt={alternative_text}
+        alt={currentItem.title}
       />
-      <button className={s.left_button} onClick={prevImage}>
-        <i className="fa-solid fa-chevron-left fa-2xl"></i>
-      </button>
-      <p className={s.current_slide}>
-        {currentImageIndex + 1} / {photos.length}
-      </p>
-      <button className={s.right_button} onClick={nextImage}>
-        <i className="fa-solid fa-chevron-right fa-2xl"></i>
-      </button>
-      <div className={s.carousel_text}>{text}</div>
+
+      {photos.length > 1 && (
+        <>
+          <button className={s.left_button} onClick={prevImage}>
+            <i className="fa-solid fa-chevron-left fa-2xl"></i>
+          </button>
+          <p className={s.current_slide}>
+            {currentImageIndex + 1} / {photos.length}
+          </p>
+          <button className={s.right_button} onClick={nextImage}>
+            <i className="fa-solid fa-chevron-right fa-2xl"></i>
+          </button>
+        </>
+      )}
     </div>
   );
 }
