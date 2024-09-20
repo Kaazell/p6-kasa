@@ -1,37 +1,6 @@
 .banner_container {
     position: relative;
   } 
-.banner_container button {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    background-color: transparent;
-    border: 0;
-    cursor: pointer;
-    color: white;
-    font-size: 12px;
-    margin: 10px
-}
-.left_button {
-    left: 0;
-}
-
-.right_button {
-    right: 0;
-}
-.current_slide {
-    position: absolute;
-    top: 80%;
-    transform: translateY(-50%);
-    left: 50%;
-    transform: translateX(-50%);
-    color: white;
-    font-size: 18px;
-    z-index: 1; /* Assurez-vous que le texte est au-dessus des boutons */
-    font-weight: 400;
-    display: none;
-}
-
 .banner_text {
     position: absolute;
     top: 50%;
@@ -49,27 +18,10 @@
     object-fit: cover;
     filter: brightness(80%);
 }
-
-.banner_housing {
-    width: 100%;
-    max-height: 255px;
-    border-radius: 10px;
-    object-fit: cover;
-}
-
 @media (min-width: 600px) {
     .banner_text{
         text-align: center;
         font-size: 24px;
-    }
-}
-@media (min-width: 720px) {
-    .banner_container button {
-        font-size: 42px;
-        margin: 18px;
-    }
-    .current_slide {
-        display: block;
     }
 }
 @media (min-width: 1300px) {
@@ -79,8 +31,5 @@
     }
     .banner_image {
         max-height: 223px;
-    }
-    .banner_housing {
-        max-height: 415px;
     }
 }

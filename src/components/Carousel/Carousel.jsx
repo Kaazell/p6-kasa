@@ -4,57 +4,40 @@ import { useParams } from "react-router-dom";
 import { useState } from "react";
 
 // L'attribut housing permet de determiner si le present composant est prevu pour la page 'home' ou 'housing'.
-export function Carousel({ text, picture, alternative_text, housing }) {
+export function Carousel({ text, alternative_text }) {
   const { id } = useParams();
   const currentItem = json.find((item) => item.id === id);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
-  if (!currentItem) {
-    return (
-      //Affichage selon que le composant soit ouvert dans /home
-      <div className={s.carousel_container}>
-        <img
-          className={housing ? s.carousel_housing : s.carousel_image}
-          src={picture}
-          alt={alternative_text}
-        />
-        <div className={s.carousel_text}>{text}</div>
-      </div>
+  const photos = currentItem.pictures;
+  // L'état initial est 0, pour la première image du tableau.
+  const nextImage = () => {
+    setCurrentImageIndex((prevIndex) =>
+      prevIndex === photos.length - 1 ? 0 : prevIndex + 1
     );
-  } else {
-    const photos = currentItem.pictures;
-    // L'état initial est 0, pour la première image du tableau.
-    const nextImage = () => {
-      setCurrentImageIndex((prevIndex) =>
-        prevIndex === photos.length - 1 ? 0 : prevIndex + 1
-      );
-    };
-
-    const prevImage = () => {
-      setCurrentImageIndex((prevIndex) =>
-        prevIndex === 0 ? photos.length - 1 : prevIndex - 1
-      );
-    };
-
-    return (
-      //Affichage selon que le composant soit ouvert dans /housing/:id
-      <div className={s.carousel_container}>
-        <img
-          className={housing ? s.carousel_housing : s.carousel_image}
-          src={photos[currentImageIndex]}
-          alt={alternative_text}
-        />
-        <button className={s.left_button} onClick={prevImage}>
-          <i className="fa-solid fa-chevron-left fa-2xl"></i>
-        </button>
-        <p className={s.current_slide}>
-          {currentImageIndex + 1} / {photos.length}
-        </p>
-        <button className={s.right_button} onClick={nextImage}>
-          <i className="fa-solid fa-chevron-right fa-2xl"></i>
-        </button>
-        <div className={s.carousel_text}>{text}</div>
-      </div>
+  };
+  const prevImage = () => {
+    setCurrentImageIndex((prevIndex) =>
+      prevIndex === 0 ? photos.length - 1 : prevIndex - 1
     );
-  }
+  };
+  return (
+    //Affichage selon que le composant soit ouvert dans /housing/:id
+    <div className={s.carousel_container}>
+      <img
+        className={s.carousel_housing}
+        src={photos[currentImageIndex]}
+        alt={alternative_text}
+      />
+      <button className={s.left_button} onClick={prevImage}>
+        <i className="fa-solid fa-chevron-left fa-2xl"></i>
+      </button>
+      <p className={s.current_slide}>
+        {currentImageIndex + 1} / {photos.length}
+      </p>
+      <button className={s.right_button} onClick={nextImage}>
+        <i className="fa-solid fa-chevron-right fa-2xl"></i>
+      </button>
+      <div className={s.carousel_text}>{text}</div>
+    </div>
+  );
 }

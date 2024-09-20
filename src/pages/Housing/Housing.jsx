@@ -17,8 +17,7 @@ export function Housing() {
     <>
       <Carousel
         picture={currentItem.cover}
-        alternative_text={"Also this"}
-        housing={true}
+        alternative_text={currentItem.title}
       />
       <div className={s.main_container}>
         <div>
