@@ -13,7 +13,10 @@
 @media (min-width: 720px) {
     .accordions_container {
         display: flex;
-        justify-content: space-between;        
+        justify-content: space-between;     
+        > * {
+            width: 48%;
+        }   
     }
 }
 
