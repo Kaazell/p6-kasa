@@ -15,8 +15,8 @@ export function Housing() {
   return (
     <>
       <Carousel />
-      <div className={s.main_container}>
-        <div>
+      <section className={s.main_container}>
+        <article>
           <HousingName
             name={currentItem.title}
             description={currentItem.location}
@@ -26,16 +26,16 @@ export function Housing() {
               <Tag key={item} tag={item} />
             ))}
           </div>
-        </div>
-        <div className={s.host_details}>
+        </article>
+        <article className={s.host_details}>
           <Stars rating={currentItem.rating} />
           <Host
             name={currentItem.host.name}
             picture={currentItem.host.picture}
           />
-        </div>
-      </div>
-      <div className={s.accordions_container}>
+        </article>
+      </section>
+      <section className={s.accordions_container}>
         <Accordion
           buttonText="Description"
           description={currentItem.description}
@@ -44,7 +44,7 @@ export function Housing() {
           buttonText="Equipements"
           equipement={currentItem.equipments}
         />
-      </div>
+      </section>
     </>
   );
 }

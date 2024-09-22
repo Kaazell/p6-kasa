@@ -6,7 +6,7 @@ export function Accordion({ buttonText, description, equipement }) {
   const [isOpen, setIsOpen] = useState(false);
   const toggleDropdown = () => setIsOpen(!isOpen);
   return (
-    <div className={s.container}>
+    <article className={s.container}>
       <div className={s.button_title} onClick={toggleDropdown}>
         {buttonText}
         <ChevronUp
@@ -25,6 +25,6 @@ export function Accordion({ buttonText, description, equipement }) {
           )}
         </div>
       )}
-    </div>
+    </article>
   );
 }
