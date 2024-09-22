@@ -17,7 +17,7 @@ export function Accordion({ buttonText, description, equipement }) {
         />
       </div>
       {isOpen && (
-        <div className={`${s.list} ${s.open}`}>
+        <div className={`${s.list}`}>
           {description ? (
             <p>{description}</p>
           ) : (

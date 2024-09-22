@@ -11,13 +11,13 @@ export function Carousel() {
   const photos = currentItem.pictures;
   // L'état initial est 0, pour la première image du tableau.
   const nextImage = () => {
-    setCurrentImageIndex((prevIndex) =>
-      prevIndex === photos.length - 1 ? 0 : prevIndex + 1
+    setCurrentImageIndex((index) =>
+      index === photos.length - 1 ? 0 : index + 1
     );
   };
   const prevImage = () => {
-    setCurrentImageIndex((prevIndex) =>
-      prevIndex === 0 ? photos.length - 1 : prevIndex - 1
+    setCurrentImageIndex((index) =>
+      index === 0 ? photos.length - 1 : index - 1
     );
   };
   return (

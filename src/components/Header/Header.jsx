@@ -13,18 +13,20 @@ export function Header() {
         className={s.header_logo}
         alt="Logo Kasa"
       />
-      <ul>
-        <li>
-          <a href="#" onClick={() => navigate("/")}>
-            ACCUEIL
-          </a>
-        </li>
-        <li>
-          <a href="#" onClick={() => navigate("/about")}>
-            A PROPOS
-          </a>
-        </li>
-      </ul>
+      <nav>
+        <ul>
+          <li>
+            <a href="#" onClick={() => navigate("/")}>
+              ACCUEIL
+            </a>
+          </li>
+          <li>
+            <a href="#" onClick={() => navigate("/about")}>
+              A PROPOS
+            </a>
+          </li>
+        </ul>
+      </nav>
     </header>
   );
 }

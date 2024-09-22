@@ -11,7 +11,6 @@ import { Carousel } from "../../components/Carousel/Carousel";
 export function Housing() {
   const { id } = useParams();
   const currentItem = json.find((item) => item.id === id);
-  const tags = currentItem.tags;
 
   return (
     <>
@@ -23,7 +22,7 @@ export function Housing() {
             description={currentItem.location}
           />
           <div className={s.tag_container}>
-            {tags.map((item) => (
+            {currentItem.tags.map((item) => (
               <Tag key={item} tag={item} />
             ))}
           </div>
