@@ -5,12 +5,24 @@ import { Host } from "../../components/Host/Host";
 import { Stars } from "../../components/Stars/Stars";
 import { Accordion } from "../../components/Accordion/Accordion";
 import json from "../../assets/json/housing.json";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { Carousel } from "../../components/Carousel/Carousel";
+import { useEffect } from "react";
 
 export function Housing() {
   const { id } = useParams();
+  const navigate = useNavigate();
   const currentItem = json.find((item) => item.id === id);
+
+  useEffect(() => {
+    if (!currentItem) {
+      navigate("/404");
+    }
+  }, [currentItem, navigate]);
+
+  if (!currentItem) {
+    return null;
+  }
 
   return (
     <>

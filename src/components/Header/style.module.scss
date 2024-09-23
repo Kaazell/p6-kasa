@@ -1,52 +1,61 @@
 @use "../../styles/variables";
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
 }
+
 .header_logo {
-    width: 120px;
-    cursor: pointer;
+  width: 120px;
+  cursor: pointer;
 }
+
 ul {
-    display: flex;
-    font-size: small;
-    li {
-        list-style-type: none;
-        a {
-            text-decoration: none;
-            margin-left: 20px;
-            color: variables.$primary-color;
-            font-weight: 500;
-            &:hover{
-                text-decoration: underline;
-            }
-        }
+  display: flex;
+  font-size: small;
+  
+  li {
+    list-style-type: none;
+    margin-left: 50px;
+
+    a {
+      color: variables.$primary-color;
+      text-decoration: none;
+      transition: text-decoration 0.3s ease;
+      
+      &:hover {
+        text-decoration: underline;
+      }
+      
+      &.active_link {
+        text-decoration: underline;
+      }
     }
+  }
 }
 
 @media (min-width: 720px) {
-    .header_logo {
-        width:200px
-    }
-    ul {
-        font-size: 18px;
-    }
-    li {
-        margin-left: 40px;
-    }
+  .header_logo {
+    width: 200px;
+  }
+  ul {
+    font-size: 18px;
+  }
+  li {
+    margin-left: 40px;
+  }
 }
 
 @media (min-width: 1024px) {
-    .header_logo {
-        width:270px
-    }
-    ul {
-        font-size: 24px;
-    }
-    li {
-        margin-left: 60px;
-    }
+  .header_logo {
+    width: 270px;
+  }
+  ul {
+    font-size: 24px;
+  }
+  li {
+    margin-left: 60px;
+  }
 }
