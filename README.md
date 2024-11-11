@@ -44,6 +44,12 @@ Importance pour ma carrière
 
 Les compétences en SEO et en accessibilité sont cruciales dans le développement web. Elles permettent d'améliorer la visibilité et l'accessibilité d'un site, ce qui accroît son trafic et son succès. La capacité à analyser, optimiser et tester un site est également très demandée car elle impacte directement la satisfaction des clients et des utilisateurs.
 
+
+## Aperçu
+Visiter le site [Kasa](https://p6-kasa-omega.vercel.app/).
+
+![Capture d'écran du site Kasa](/screenshots/kasa1.webp)
+
 ## Auteur
 Projet réalisé par Atef Lachhab dans le cadre de la formation OpenClassrooms - Développeur Web.
 
