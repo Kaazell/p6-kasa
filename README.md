@@ -37,9 +37,9 @@ Pour exécuter le projet localement :
 ### Compétences développées
 Grâce à ce projet, j'ai renforcé plusieurs compétences essentielles :
 
-**Optimisation SEO :** Capacité à analyser et à corriger les problèmes de référencement pour améliorer la visibilité du site.
-**Accessibilité web :** Maîtrise des normes d'accessibilité et mise en œuvre de pratiques pour rendre le site accessible à tous les utilisateurs.
-**Optimisation de la performance :** Capacité à améliorer le chargement et la performance du site pour offrir une expérience utilisateur optimale.
+- **Optimisation SEO :** Capacité à analyser et à corriger les problèmes de référencement pour améliorer la visibilité du site.
+- **Accessibilité web :** Maîtrise des normes d'accessibilité et mise en œuvre de pratiques pour rendre le site accessible à tous les utilisateurs.
+- **Optimisation de la performance :** Capacité à améliorer le chargement et la performance du site pour offrir une expérience utilisateur optimale.
 Importance pour ma carrière
 
 Les compétences en SEO et en accessibilité sont cruciales dans le développement web. Elles permettent d'améliorer la visibilité et l'accessibilité d'un site, ce qui accroît son trafic et son succès. La capacité à analyser, optimiser et tester un site est également très demandée car elle impacte directement la satisfaction des clients et des utilisateurs.
