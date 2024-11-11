@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+# Optimisation SEO et Accessibilité pour un Site Web
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description du projet
+Dans ce projet, j'ai travaillé en tant que développeur freelance pour optimiser le référencement (SEO) et l'accessibilité d'un site web. Mon objectif était d'améliorer la performance du site ainsi que son accessibilité pour les utilisateurs et les moteurs de recherche.
 
-## Available Scripts
+## Étapes du projet
+1. **Analyse des performances et de l'accessibilité**  
+   J'ai commencé par identifier les problèmes de chargement et de référencement du site en utilisant des outils tels que **Lighthouse** et **Wave**. Ces analyses m'ont permis de déterminer les améliorations nécessaires pour optimiser le site en termes de SEO et d'accessibilité.
 
-In the project directory, you can run:
+2. **Propositions d'optimisation**  
+   Suite à l'analyse, j'ai proposé plusieurs recommandations visant à :
+   - Améliorer la vitesse de chargement du site
+   - Optimiser la structure du code pour le SEO
+   - Améliorer l'accessibilité du site selon les standards actuels
 
-### `npm start`
+3. **Implémentation des recommandations**  
+   J'ai appliqué les modifications recommandées pour maximiser la performance et l'accessibilité du site, améliorant ainsi son positionnement dans les résultats de recherche et l'expérience utilisateur.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+4. **Rapport des résultats**  
+   Pour conclure le projet, j'ai créé un rapport comparant les résultats **avant et après** l'optimisation. Ce rapport comprend :
+   - Des captures d'écran des audits de Lighthouse et Wave
+   - Des explications détaillées des changements apportés
+   - Une analyse de l'impact de chaque modification sur le SEO et l'accessibilité
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Démarrage du projet
+Pour exécuter le projet localement :
+1. Cloner le repository.
+2. Naviguer dans le dossier du projet.
+3. Installer les dépendances :
+   ```bash
+   npm install
+    ```
+4. Lancer le projet:
+    ```bash
+    npm start
+    ```
+## Compétences développées
+Grâce à ce projet, j'ai renforcé plusieurs compétences essentielles :
 
-### `npm test`
+Optimisation SEO : Capacité à analyser et à corriger les problèmes de référencement pour améliorer la visibilité du site.
+Accessibilité web : Maîtrise des normes d'accessibilité et mise en œuvre de pratiques pour rendre le site accessible à tous les utilisateurs.
+Optimisation de la performance : Capacité à améliorer le chargement et la performance du site pour offrir une expérience utilisateur optimale.
+Importance pour ma carrière
+Les compétences en SEO et en accessibilité sont cruciales dans le développement web. Elles permettent d'améliorer la visibilité et l'accessibilité d'un site, ce qui accroît son trafic et son succès. La capacité à analyser, optimiser et tester un site est également très demandée car elle impacte directement la satisfaction des clients et des utilisateurs.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Auteur
+Projet réalisé par Atef Lachhab dans le cadre de la formation OpenClassrooms - Développeur Web.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
