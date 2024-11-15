@@ -1,4 +1,4 @@
-footer {
+.footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -10,18 +10,18 @@ footer {
     height: 240px;
     color: white;
     margin-top: 40px;
+    &__text {
+        font-size: 12px;
+        width:130px;
+        text-align: center;
+        margin-top: 15px;
+        font-weight: 400;
+    }
 }
 
-.footer_text {
-    font-size: 12px;
-    width:130px;
-    text-align: center;
-    margin-top: 15px;
-    font-weight: 400;
-}
 
 @media (min-width: 720px) {
- .footer_text {
+ .footer__text {
     width: 200px;
  }
 }

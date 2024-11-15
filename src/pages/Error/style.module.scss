@@ -5,14 +5,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    h1 {
-        font-size: 200px;
+    &__title {
+        font-size: 130px;
         margin: 40px;
     }
-    h2 {
+    &__description {
         margin: 40px;
-    }
-    p {
+    } 
+    &__return {
         margin: 40px;
         text-decoration: underline;
         cursor: pointer;

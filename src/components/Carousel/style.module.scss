@@ -38,12 +38,14 @@
 } 
 
 @media (min-width: 720px) {
-    .carousel__buttons {
-        font-size: 42px;
-        margin: 18px;
-    }
-    .carousel__counter {
-        display: block;
+    .carousel {
+        &__buttons {
+            font-size: 42px;
+            margin: 18px;
+        }
+        &__counter {
+            display: block;
+        }
     }
 }
 @media (min-width: 1300px) {
