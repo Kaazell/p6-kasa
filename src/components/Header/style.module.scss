@@ -1,6 +1,6 @@
 @use "../../styles/variables";
 
-header {
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -12,13 +12,12 @@ header {
 }
 
 
-ul {
+.navlist {
   display: flex;
-  font-size: small;
-  li {
+  &__item {
     list-style-type: none;
-    margin-left: 50px;
-    a {
+    margin-left: 10px;
+    &__link {
       color: variables.$primary-color;
       text-decoration: none;
       transition: text-decoration 0.3s ease;
@@ -38,11 +37,11 @@ ul {
   .header__logo {
     width: 200px;
   }
-  ul {
+  .navlist {
     font-size: 18px;
-  }
-  li {
-    margin-left: 40px;
+    &__item {
+      margin-left: 40px;
+    }
   }
 }
 
@@ -50,10 +49,10 @@ ul {
   .header__logo {
     width: 270px;
   }
-  ul {
+  .navlist {
     font-size: 24px;
-  }
-  li {
-    margin-left: 60px;
+    &__item {
+      margin-left: 60px;
+    }
   }
 }
