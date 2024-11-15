@@ -1,50 +1,50 @@
 @use "../../styles/variables";
 
-.container{
+.accordion{
     margin-top: 10px;
-}
-
-.button_title{
-    display: flex;
-    justify-content: space-between;
-    padding: 8px;
-    text-align: left;
-    background-color: variables.$primary-color;
-    border: none;
-    color: white;
-    width: 100%;
-    border-radius: 5px;
-    font-size: 13px;
-}
-
-.list{
-    width: 100%;
-    background-color: #F6F6F6;
-    position: relative;
-    border-radius: 0 0 4px 4px;
-    color: variables.$primary-color;;
-    padding: 20px 0;
-    opacity: 0; 
-    max-height: 0;
-    overflow: hidden;
-    transition: opacity 0.3s ease, max-height 0.3s ease;
-    opacity: 1; 
-    max-height: 300px; 
-    p {
-        margin: 2px 20px;
+    &__title{
+        display: flex;
+        justify-content: space-between;
+        padding: 8px;
+        text-align: left;
+        background-color: variables.$primary-color;
+        border: none;
+        color: white;
+        width: 100%;
+        border-radius: 5px;
+        font-size: 13px;
+    }
+    &__list{
+        width: 100%;
+        background-color: #F6F6F6;
+        position: relative;
+        border-radius: 0 0 4px 4px;
+        color: variables.$primary-color;;
+        padding: 20px 0;
+        opacity: 0; 
+        max-height: 0;
+        overflow: hidden;
+        transition: opacity 0.3s ease, max-height 0.3s ease;
+        opacity: 1; 
+        max-height: 300px; 
+        &__content {
+            margin: 2px 20px;
+        }
+    }
+    &__list:last-child {
+        margin-bottom: 10px;
     }
 }
 
-.list:last-child {
-    margin-bottom: 10px;
-}
+
+
   
 
 @media (min-width: 720px) {
-    .container {
+    .accordion {
         margin-top: 30px;
-    }
-    .button_title{
-        font-size: 18px;
+        &__title{
+            font-size: 18px;
+        }
     }
 }

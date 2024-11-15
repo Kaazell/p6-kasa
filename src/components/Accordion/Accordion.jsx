@@ -6,8 +6,8 @@ export function Accordion({ buttonText, description, equipement }) {
   const [isOpen, setIsOpen] = useState(false);
   const toggleDropdown = () => setIsOpen(!isOpen);
   return (
-    <article className={s.container}>
-      <div className={s.button_title} onClick={toggleDropdown}>
+    <article className={s.accordion}>
+      <div className={s.accordion__title} onClick={toggleDropdown}>
         {buttonText}
         <ChevronUp
           style={{
@@ -17,7 +17,7 @@ export function Accordion({ buttonText, description, equipement }) {
         />
       </div>
       {isOpen && (
-        <div className={`${s.list}`}>
+        <div className={`${s.accordion__list}`}>
           {description ? (
             <p>{description}</p>
           ) : (
