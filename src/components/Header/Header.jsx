@@ -6,7 +6,7 @@ export function Header() {
   return (
     <header>
       <NavLink to="/">
-        <img src={logo} className={s.header_logo} alt="Logo Kasa" />
+        <img src={logo} className={s.header__logo} alt="Logo Kasa" />
       </NavLink>
       <nav>
         <ul>

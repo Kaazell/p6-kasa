@@ -5,21 +5,19 @@ header {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 30px;
+  &__logo {
+    width: 120px;
+    cursor: pointer;
+  }
 }
 
-.header_logo {
-  width: 120px;
-  cursor: pointer;
-}
 
 ul {
   display: flex;
   font-size: small;
-  
   li {
     list-style-type: none;
     margin-left: 50px;
-
     a {
       color: variables.$primary-color;
       text-decoration: none;
@@ -37,7 +35,7 @@ ul {
 }
 
 @media (min-width: 720px) {
-  .header_logo {
+  .header__logo {
     width: 200px;
   }
   ul {
@@ -49,7 +47,7 @@ ul {
 }
 
 @media (min-width: 1024px) {
-  .header_logo {
+  .header__logo {
     width: 270px;
   }
   ul {
